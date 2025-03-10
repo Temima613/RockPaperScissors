@@ -79,15 +79,68 @@ button:active {
 article{
     color: var(--blue);
 }
-aside p{
-    display:flexbox;
-    text-align: right;
-    align-items: center;
+* Style for the aside element */
+aside {
+    text-align: right; /* Ensure text is left-aligned */
+    align-items: flex-end; /* Align items to the start (left) */
     position: relative;
     top: 0;
     height: 100%;
     background-color: #e7e7e7;
     padding: 20px;
     z-index: 5;
-
+    font-family: Arial, sans-serif;
 }
+
+/* Style for paragraphs inside aside */
+aside p {
+    text-align: right; /* Ensure text within paragraphs is left-aligned */
+    margin-bottom: 10px; /* Adds space between paragraphs */
+}
+
+/* Make win/lose message stand out */
+.win-lose-message {
+    font-size: 24px; /* Bigger font size */
+    font-weight: bold; /* Make the text bold */
+    color: #ff4500; /* Highlight win/lose with a strong color */
+    text-align: center; /* Center align the message */
+    margin: 20px 0; /* Space around the message */
+}
+
+/* Style the computer's choice and buttons */
+.computers-choice {
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 20px; /* Space between computer's choice and the buttons */
+}
+
+.button-container {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+.button-container button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.button-container button:active {
+    background-color: #388e3c; /* Even darker green when clicked */
+}
+
+
+
+
+
