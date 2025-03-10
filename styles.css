@@ -1,0 +1,93 @@
+:root {
+    font-family: "Times New Roman", Times, serif;
+    --blue: #831eff;
+    --font-size: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: var(--font-size);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    line-height: 0.25;
+    font-size: 18px;
+    background-color: var(--blue);
+    border: 5px solid black;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    z-index: 10;
+    padding-bottom: 20px;
+}
+
+div img {
+    padding: 10px 20px;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: var(--font-size);
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+div img:hover {
+    background-color: darkblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.5);
+}
+
+div img:active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: var(--font-size);
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+button:active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container #Rock,
+.container #Paper,
+.container #Scissors {
+    margin-right: 50px;
+}
+
+article{
+    color: var(--blue);
+}
+aside p{
+    display:flexbox;
+    text-align: right;
+    align-items: center;
+    position: relative;
+    top: 0;
+    height: 100%;
+    background-color: #e7e7e7;
+    padding: 20px;
+    z-index: 5;
+
+}
